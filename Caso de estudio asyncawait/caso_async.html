@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caso de Estudio: Async/Await</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .contenedor {
+            background: white;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff; /* Azul */
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .resultado {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border: 1px dashed #333;
+            min-height: 30px;
+        }
+        
+        .personaje {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+            background: #fff;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-align: left;
+        }
+        .personaje img {
+            width: 80px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Practica de Async/Await</h1>
+    <h3>por: Gael Morales Cortes</h3>
+
+<!-- Ejercicio 1 --> 
+    <div class="contenedor">
+        <h2>Ejercicio 1: Temporizador</h2>
+        <p>Al hacer clic, esperaremos 3 segundos.</p>
+        <button onclick="ejecutarEjercicio1()">Iniciar Espera</button>
+        <div id="pantalla1" class="resultado">El mensaje aparecerá aquí...</div>
+    </div>
+
+<!-- Ejercicio 2 -->
+    <div class="contenedor">
+        <h2>Ejercicio 2: API Rick & Morty</h2>
+        <p>Descargar datos reales de internet.</p>
+        <button onclick="ejecutarEjercicio2()">Obtener Datos</button>
+        <div id="pantalla2" class="resultado">Los personajes aparecerán aquí...</div>
+    </div>
+<!-- Enlace -->
+    <script src="caso_async.js"></script>
+
+</body>
+</html>
